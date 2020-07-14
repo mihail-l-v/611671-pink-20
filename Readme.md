@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Лупачев](https://up.htmlacademy.ru/adaptive/20/user/611671).
-* Наставник: `Неизвестно`.
+* Наставник: Алексей Хабиров.
 
 ---
 
