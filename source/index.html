@@ -1,12 +1,237 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo">
+        <img src="img/logotype-pink.svg" width="74" height="23" alt="PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="preview">
+        <h1 class="visually-hidden">Мобильное приложение PINK</h1>
+        <div class="preview__bg-img">
+          <h2 class="preview__slogan">Взгляните на жизнь иначе!</h2>
+          <div class="preview__picture">
+            <img src="#" width="320" height="286" alt="Изображение телефона">
+          </div>
+        </div>
+        <div class="preview__bg-dark">
+          <p class="preview__download">
+            <a href="#" class="preview__download__button">Скачать приложение</a>
+          </p>
+          <ul class="preview__resources apps">
+            <li class="apps__item apps__item--apple">
+              <img src="#" width="47" height="56" alt="Логотип Apple">
+            </li>
+            <li class="apps__item apps__item--android">
+              <img src="#" width="43" height="47" alt="Логотип Android">
+            </li>
+            <li class="apps__item apps__item--windows">
+              <img src="#" width="44" height="41" alt="Логотип Windows">
+            </li>
+          </ul>
+          <p class="preview__annotation">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+        </div>
+      </section>
+      <section class="description">
+        <h2 class="visually-hidden">Описание приложения PINK</h2>
+        <div class="description__head description__head--bg-white">
+          <p class="description__slogan">Устали от серости  мегаполиса?</p>
+          <p class="description__slogan">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="description__content">
+          <dl class="description__list">
+            <dt class="description__title">
+              Поднимает настроение
+            </dt>
+            <dd class="description__advantage">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </dd>
+            <dt class="description__title">
+              Меняет мир вокруг
+            </dt>
+            <dd class="description__advantage">
+              Сделайте снимок и украсьте его  смайликом или текстовой подписью, чтобы усилить эффект
+            </dd>
+            <dt class="description__title">
+              Заводит новых друзей
+            </dt>
+            <dd class="description__advantage">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </dd>
+          </dl>
+        </div>
+        <div class="description__img">
+          <img class="description__img-phone" src="#" width="157" height="320" alt="Изображение Всем привет!">
+        </div>
+      </section>
+      <section class="reviews reviews__bg-white">
+        <h2 class="visually-hidden">Отзывы на приложение PINK</h2>
+        <div class="reviews__wrapper slider">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <p class="reviews__author">Николай Петров</p>
+              <p class="reviews__review">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="reviews__item slider__item">
+              <p class="reviews__author">Николай Петров</p>
+              <p class="reviews__review">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="reviews__item slider__item">
+              <p class="reviews__author">Николай Петров</p>
+              <p class="reviews__review">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button type="button" class="slider__toggle slider__toggle--current">1</button>
+            <button type="button" class="slider__toggle">2</button>
+            <button type="button" class="slider__toggle">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Стоимость приложения PINK</h2>
+        <div class="price__wrapper slider">
+          <ul class="price__list slider__list">
+            <li class="price__item slider__item">
+              <div class="price__title">
+                <p class="price__name">База</p>
+                <p class="price__value">1.99 USD</p>
+              </div>
+              <div class="price__consist price__consist--yes">
+                <p class="price__consist-item">Розовый фильтр</p>
+              </div>
+              <div class="price__consist price__consist--no">
+                <p class="price__consist-item">Смайлики</p>
+              </div>
+              <div class="price__consist price__consist--no">
+                <p class="price__consist-item">Комментарии</p>
+              </div>
+            </li>
+            <li class="price__item slider__item">
+              <div class="price__title price__title__hit">
+                <p class="price__name">Стандарт</p>
+                <p class="price__value">3.99 USD</p>
+              </div>
+              <div class="price__consist price__consist--yes">
+                <p class="price__consist-item">Розовый фильтр</p>
+              </div>
+              <div class="price__consist price__consist--yes">
+                <p class="main-price__consist-item">Смайлики</p>
+              </div>
+              <div class="price__consist price__consist--no">
+                <p class="price__consist-item">Комментарии</p>
+              </div>
+            </li>
+            <li class="price__item slider__item">
+              <div class="price__title">
+                <p class="price__name">Анлим</p>
+                <p class="price__value">9.99 USD</p>
+              </div>
+              <div class="price__consist price__consist--yes">
+                <p class="price__consist-item">Розовый фильтр</p>
+              </div>
+              <div class="price__consist mrice__consist--yes">
+                <p class="mrice__consist-item">Смайлики</p>
+              </div>
+              <div class="mrice__consist mrice__consist--yes">
+                <p class="mrice__consist-item">Комментарии</p>
+              </div>
+            </li>
+          </ul>
+          <p class="price__toggles slider__toggles">
+            <button type="button" class="slider__toggle">1</button>
+            <button type="button" class="slider__toggle slider__toggle--current">2</button>
+            <button type="button" class="slider__toggle">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты для связи</h2>
+        <div class="contacts__contain-contacts">
+          <p class="contacts__questions">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__title">Звоните:</p>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
+          </a><br>
+          <p class="contacts__title">Пишите:</p>
+          <a class="contacts__email" href="mail@htmlacademy.ru">
+            <span class="contacts__email-address">mail@htmlacademy.ru</span>
+          </a><br>
+          <p class="contacts__title">Приезжайте в гости:</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <div class="contacts__map">
+          <img class="contacts__map-img" src="#" width="320" height="200" alt="Расположение на карте">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img class="footer__logo-pink" src="#" width="145" height="40" alt="Логотип PINK" >
+        </div>
+        <div class="socials">
+          <ul class="social-icons__list">
+            <li class="social-icons__icon site-list__item--twitter">
+              <a class="social-icons__twitter" href="#"><img src="#" width="18" height="14" alt="Логотип twitter"></a>
+            </li>
+            <li class="social-icons__icon site-list__item--facebook">
+              <a class="social-icons__facebook" href="#"><img src="#" width="9" height="18" alt="Логотип facebook"></a>
+            </li>
+            <li class="social-icons__icon site-list__item--youtube">
+              <a class="social-icons__youtube" href="#"><img src="#" width="15" height="13" alt="Логотип youtube"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p class="copyright__created">Разработано</p>
+          <a class="poryright__link">
+            <img class="copyright__logo-html" src="#" width="27" height="34" alt="Логотип HTML">
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
