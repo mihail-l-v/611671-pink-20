@@ -45,10 +45,133 @@
         <h2 class="page-form__preview-box">
           Конкурс на самое безбашенное путешествие с Пинк
         </h2>
+        <p class="page-form__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
       </div>
       <section class="page-form__content">
-        <form action="" class="form">
-
+        <form action="https://echo.htmlacademy.ru" class="form" method="post">
+          <dl class="page-form__list">
+            <dt class="page-form__title">
+              <label for="page-form__form-surname">
+                Фамилия:
+              </label>
+            </dt>
+            <dd class="page-form__form-area">
+              <input id="page-form__form-surname" class="page-form__surname" type="text" name="page-form__surname" required placeholder="Укажите фамилию *">
+            </dd>
+            <dt class="page-form__title">
+              <label for="page-form__form-name">
+                Имя:
+              </label>
+            </dt>
+            <dd class="page-form__form-area">
+              <input id="page-form__form-name" class="page-form__name" type="text" name="page-form__name" required placeholder="Введите ваше имя *">
+            </dd>
+            <dt class="page-form__title">
+              <label for="page-form__form-patronymic">
+                Отчетсво:
+              </label>
+            </dt>
+            <dd class="page-form__form-area">
+              <input id="page-form__form-patronymic" class="page-form__patronymic" type="text" name="page-form__patronymic" placeholder="Ну и отчество тоже">
+            </dd>
+          </dl>
+          <fieldset class="page-form__achievements">
+            <legend class="page-form__achievements-legend">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+              <ul class="page-form__achievements-list">
+                <li class="page-form__achievements-item">
+                  <label>
+                    <input class="page-form__achievements-checkbox" type="checkbox" name="selfie-shark" checked>
+                    Сделал селфи с акулой
+                  </label>
+                </li>
+                <li class="page-form__achievements-item">
+                  <label>
+                    <input class="page-form__achievements-checkbox" type="checkbox" name="burn-beach" checked>
+                    Обгорел на пляже
+                  </label>
+                </li>
+                <li class="page-form__achievements-item">
+                  <label>
+                    <input class="page-form__achievements-checkbox" type="checkbox" name="Chak-Norris">
+                    Видел Чака Норриса
+                  </label>
+                </li>
+                <li class="page-form__achievements-item">
+                  <label>
+                    <input class="page-form__achievements-checkbox" type="checkbox" name="buy-suneirs">
+                    Накупил сувениров
+                  </label>
+                </li>
+                <li class="page-form__achievements-item">
+                  <label>
+                    <input class="page-form__achievements-checkbox" type="checkbox" name="hold-tower" checked>
+                    Удержал башню
+                  </label>
+                </li>
+                <li class="page-form__achievements-item">
+                  <label>
+                    <input class="page-form__achievements-checkbox" type="checkbox" name="destroy-hotel">
+                    Разгромил отель
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset class="page-form__contacts">
+            <legend class="page-form__contacts-legend">
+              контактная информация
+            </legend>
+            <dl class="page-form__contacts-list">
+              <dt class="page-form__contacts-title">
+                <label for="page-form__phone-number">
+                  Номер телефона
+                </label>
+              </dt>
+              <dd class="page-form__contacts-area">
+                <input id="page-form__phone-number" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+              </dd>
+              <dt class="page-form__contacts-title">
+                <label for="page-form__email">
+                  Адрес почты
+                </label>
+              </dt>
+              <dd class="page-form__contacts-area">
+                <input id="page-form__email" type="email" name="email" placeholder="Введите почту *" required>
+              </dd>
+            </dl>
+          </fieldset>
+          <fieldset class="page-form__apps">
+            <legend class="page-form__apps-legend">
+              С каким приложением путешествовали?
+            </legend>
+            <ul class="page-form__apps-list">
+              <li class="page-form__apps-item">
+                <label>
+                  <input type="radio" name="your-app" value="ios" checked>Pink для iOS
+                </label>
+              </li>
+              <li class="page-form__apps-item">
+                <label>
+                  <input type="radio" name="your-app" value="android">Pink для Android
+                </label>
+              </li>
+              <li class="page-form__apps-item">
+                <label>
+                  <input type="radio" name="your-app" value="windows">Windows Phone
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="page-form__emotions">
+            <legend class="page-form__emotions-legend">Опишите свои эмоции</legend>
+            <textarea class="page-form__emotions-text" name="comment" rows="10" cols="35">
+            Можно прям в красках, не стесняясь в выражениях
+          </textarea>
+          </fieldset>
+          <button class="page-form__send-form" type="button">Отправить форму</button>
         </form>
       </section>
     </main>

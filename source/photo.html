@@ -193,7 +193,53 @@
         </ul>
       </section>
       <section class="upload">
-
+        <h2 class="visually-hidden">
+          Загрузите ваши фотографии
+        </h2>
+        <p class="upload__annotation">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <form class="upload__forms" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+          <div class="upload_foto-area">
+            <input type="file" name="upload_your-foto" width="280" height="374">
+          </div>
+          <div class="upload__correction-area">
+            <ul class="upload__correction-list">
+              <li class="upload__correction-item">
+               <button class="upload__tool" type="button">
+                <label for="crop-foto">
+                 <img src="#" width="44" height="44" alt="Обрезать">
+                </label>
+                 <input id="crop-foto" type="range" name="input__crop-img">
+               </button>
+              </li>
+              <li class="upload__correction-item">
+               <button class="upload__tool" type="button">
+                <label for="fill-foto">
+                 <img src="#" width="48" height="43" alt="Заливка">
+                </label>
+                 <input id="fill-foto" type="range" name="input__fill-img">
+               </button>
+              </li>
+              <li class="upload__correction-item">
+               <button class="upload__tool" type="button">
+                <label for="contrast-foto">
+                 <img src="#" width="32" height="32" alt="Контрастность">
+                </label>
+                 <input id="contrast-foto" type="range" name="input__contrast-img">
+               </button>
+              </li>
+            </ul>
+          </div>
+          <div class="upload__buttons">
+            <button type="button" class="upload__button">
+              Запостить
+            </button>
+            <button type="reset" class="upload__button">
+              Отмена
+            </button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="footer">
