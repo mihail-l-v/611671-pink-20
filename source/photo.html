@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Фотографии пользователей</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="header">
@@ -200,39 +201,51 @@
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </p>
         <form class="upload__forms" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-          <div class="upload_foto-area">
-            <input type="file" name="upload_your-foto" width="280" height="374">
+          <div class="upload__foto-area">
+            <input type="file" name="upload__your-foto" width="280" height="374">
           </div>
           <div class="upload__correction-area">
             <ul class="upload__correction-list">
               <li class="upload__correction-item">
-               <button class="upload__tool" type="button">
-                <label for="crop-foto">
-                 <img src="#" width="44" height="44" alt="Обрезать">
-                </label>
-                 <input id="crop-foto" type="range" name="input__crop-img">
-               </button>
+                <button class="upload__tool" type="button">
+                  <svg>
+
+                  </svg>
+                </button>
+                <div class="upload__scale">
+                  <div class="upload__bar"></div>
+                  <button type="button">+</button>
+                  <button type="button">-</button>
+                </div>
               </li>
               <li class="upload__correction-item">
-               <button class="upload__tool" type="button">
-                <label for="fill-foto">
-                 <img src="#" width="48" height="43" alt="Заливка">
-                </label>
-                 <input id="fill-foto" type="range" name="input__fill-img">
-               </button>
+                <button class="upload__tool" type="button">
+                  <svg>
+
+                  </svg>
+                </button>
+                <div class="upload__scale">
+                  <div class="upload__bar"></div>
+                  <button type="button">+</button>
+                  <button type="button">-</button>
+                </div>
               </li>
               <li class="upload__correction-item">
-               <button class="upload__tool" type="button">
-                <label for="contrast-foto">
-                 <img src="#" width="32" height="32" alt="Контрастность">
-                </label>
-                 <input id="contrast-foto" type="range" name="input__contrast-img">
-               </button>
+                <button class="upload__tool" type="button">
+                  <svg>
+
+                  </svg>
+                </button>
+                <div class="upload__scale">
+                  <div class="upload__bar"></div>
+                  <button type="button">+</button>
+                  <button type="button">-</button>
+                </div>
               </li>
             </ul>
           </div>
           <div class="upload__buttons">
-            <button type="button" class="upload__button">
+            <button type="submit" class="upload__button">
               Запостить
             </button>
             <button type="reset" class="upload__button">

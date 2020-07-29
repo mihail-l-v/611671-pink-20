@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Конкурс</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="header">
@@ -51,34 +52,30 @@
       </div>
       <section class="page-form__content">
         <form action="https://echo.htmlacademy.ru" class="form" method="post">
-          <dl class="page-form__list">
-            <dt class="page-form__title">
-              <label for="page-form__form-surname">
-                Фамилия:
-              </label>
-            </dt>
-            <dd class="page-form__form-area">
-              <input id="page-form__form-surname" class="page-form__surname" type="text" name="page-form__surname" required placeholder="Укажите фамилию *">
-            </dd>
-            <dt class="page-form__title">
-              <label for="page-form__form-name">
-                Имя:
-              </label>
-            </dt>
-            <dd class="page-form__form-area">
-              <input id="page-form__form-name" class="page-form__name" type="text" name="page-form__name" required placeholder="Введите ваше имя *">
-            </dd>
-            <dt class="page-form__title">
-              <label for="page-form__form-patronymic">
-                Отчетсво:
-              </label>
-            </dt>
-            <dd class="page-form__form-area">
-              <input id="page-form__form-patronymic" class="page-form__patronymic" type="text" name="page-form__patronymic" placeholder="Ну и отчество тоже">
-            </dd>
-          </dl>
+          <fieldset class="page-form__name-list">
+            <ul class="page-form__list">
+              <li class="page-form__item">
+                <label for="page-form__form-surname" class="page-form__lable">
+                  Фамилия:
+                </label>
+                <input id="page-form__form-surname" class="page-form__input" type="text" name="page-form__surname" required placeholder="Укажите фамилию *">
+              </li>
+              <li class="page-form__item">
+                <label for="page-form__form-name" class="page-form__lable">
+                  Имя:
+                </label>
+                <input id="page-form__form-name" class="page-form__input" type="text" name="page-form__name" required placeholder="Введите ваше имя *">
+              </li>
+              <li class="page-form__item">
+                <label for="page-form__form-patronymic" class="page-form__lable">
+                  Отчетсво:
+                </label>
+                <input id="page-form__form-patronymic" class="page-form__input" type="text" name="page-form__patronymic" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="page-form__achievements">
-            <legend class="page-form__achievements-legend">
+            <legend class="page-form__lable">
               Ваши безбашенные достижения в путешествии
             </legend>
               <ul class="page-form__achievements-list">
@@ -121,30 +118,26 @@
               </ul>
           </fieldset>
           <fieldset class="page-form__contacts">
-            <legend class="page-form__contacts-legend">
+            <legend class="page-form__lible">
               контактная информация
             </legend>
-            <dl class="page-form__contacts-list">
-              <dt class="page-form__contacts-title">
-                <label for="page-form__phone-number">
+            <ul class="page-form__list">
+              <li class="page-form__item">
+                <label for="page-form__phone-number" class="page-form__lable">
                   Номер телефона
                 </label>
-              </dt>
-              <dd class="page-form__contacts-area">
-                <input id="page-form__phone-number" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
-              </dd>
-              <dt class="page-form__contacts-title">
-                <label for="page-form__email">
+                <input id="page-form__phone-number" class="page-form__input" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="page-form__item">
+                <label for="page-form__email" class="page-form__lable">
                   Адрес почты
                 </label>
-              </dt>
-              <dd class="page-form__contacts-area">
-                <input id="page-form__email" type="email" name="email" placeholder="Введите почту *" required>
-              </dd>
-            </dl>
+                <input id="page-form__email" class="page-form__input" type="email" name="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="page-form__apps">
-            <legend class="page-form__apps-legend">
+            <legend class="page-form__lable">
               С каким приложением путешествовали?
             </legend>
             <ul class="page-form__apps-list">
@@ -155,24 +148,34 @@
               </li>
               <li class="page-form__apps-item">
                 <label>
-                  <input type="radio" name="your-app" value="android">Pink для Android
+                  <input type="radio" name="your-app" value="android">
+                  Pink для Android
                 </label>
               </li>
               <li class="page-form__apps-item">
                 <label>
-                  <input type="radio" name="your-app" value="windows">Windows Phone
+                  <input type="radio" name="your-app" value="windows">
+                  Windows Phone
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="page-form__emotions">
-            <legend class="page-form__emotions-legend">Опишите свои эмоции</legend>
-            <textarea class="page-form__emotions-text" name="comment" rows="10" cols="35">
-            Можно прям в красках, не стесняясь в выражениях
-          </textarea>
+            <legend class="page-form__lable">
+              Опишите свои эмоции
+            </legend>
+            <label class="page-form__lable">
+              <textarea class="page-form__text-area" name="comment" rows="10" cols="35">
+                Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+            </label>
           </fieldset>
-          <button class="page-form__send-form" type="button">Отправить форму</button>
+          <button class="page-form__send-form" type="button">  Отправить форму
+          </button>
         </form>
+        <p class="page-form__ps">
+          <span class="page-form__lable">*</span> — обязательные поля
+        </p>
       </section>
     </main>
     <footer class="footer">
