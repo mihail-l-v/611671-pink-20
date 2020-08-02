@@ -1,7 +1,9 @@
+.price {
+  background-color: $bg-grey;
+}
 .price__title {
   background-color: $bg-price;
   border: 2px solid $bg-price;
-  border-radius: 0px 1px 0px 0px;
 }
 .price__list {
   background-color: $white;
