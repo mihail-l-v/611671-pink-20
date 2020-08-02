@@ -1,3 +1,9 @@
 .upload__forms {
   background-color: $bg-grey;
 }
+.upload__annotation {
+  @include font (14px, 30px);
+}
+.upload__correction-list {
+  @include list-reset;
+}

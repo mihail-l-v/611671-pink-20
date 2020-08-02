@@ -1,3 +1,29 @@
 .user-card__description-photo {
   background-color: $bg-grey;
 }
+.photos__title {
+  background-color: $bg-dark;
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  @include font (24px, auto);
+  color: $white;
+  font-weight: 300;
+}
+.photos__annotation {
+  @include font (14px, 30px);
+}
+.user-card__author {
+  font-weight: 700;
+}
+.user-card__time-ago {
+  @include font (12px, 24px);
+  font-weight: 300;
+}
+.user-card__heart-amount {
+  @include font (12px, 24px);
+  color: $pink;
+  text-transform: uppercase;
+}
+.photos__list {
+  @include list-reset;
+}
