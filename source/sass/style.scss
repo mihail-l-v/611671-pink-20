@@ -1,4 +1,11 @@
-body {
-  background: green;
-}
-@import url(base/_fonts.scss);
+
+@import "base/visually-hidden.scss";
+@import "base/fonts.scss";
+@import "base/bg-grey.scss";
+@import "base/base-colors.scss";
+@import "blocks/header.scss";
+@import "blocks/preview.scss";
+@import "blocks/description.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-form.scss"
