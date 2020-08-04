@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+
+// base
+@import "base/variables.scss";
+@import "base/fonts.scss";
+@import "base/visually-hidden.scss";
+@import "base/global.scss";
+// 
+@import "blocks/site-list.scss";
+@import "blocks/apps.scss";
+@import "blocks/reviews.scss";
+@import "blocks/page__body.scss";
+@import "blocks/header.scss";
+@import "blocks/preview.scss";
+@import "blocks/description.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-form.scss";
+@import "blocks/photos.scss";
+@import "blocks/upload.scss";
+@import "blocks/socials.scss";
+@import "blocks/copyright.scss";

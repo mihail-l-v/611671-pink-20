@@ -1,0 +1,38 @@
+.page-form__preview-box {
+  background-color: $bg-dark;
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  @include font (24px, auto);
+  color: $white;
+  font-weight: 300;
+}
+.page-form__list,
+.page-form__achievements-list,
+.page-form__list,
+.page-form__apps-list {
+  @include list-reset;
+}
+.page-form__achievements,
+.page-form__apps {
+  background-color: $bg-grey;
+}
+.page-form__description {
+  @include font (14px, 30px);
+}
+.page-form__lable {
+  @include font (14px, 18px);
+  color: $pink;
+  text-transform: uppercase;
+}
+.page-form__lable--field {
+  line-height: 30px;
+}
+.page-form__achievements-checkbox {
+  @include font (18px, 30px);
+}
+.page-form__apps-item {
+  @include font (18px, 30px);
+}
+.page-form__text-area {
+  @include font (18px, 30px);
+}

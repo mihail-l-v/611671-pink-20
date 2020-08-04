@@ -1,0 +1,27 @@
+.price {
+  background-color: $bg-grey;
+}
+.price__title {
+  background-color: $bg-price;
+  border: 2px solid $bg-price;
+}
+.price__list {
+  background-color: $white;
+  @include list-reset;
+}
+.price__name {
+  @include font (16px, 30px);
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.price__value {
+  @include font (18px, 30px);
+  color: $white;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.price__consist-item {
+  @include font (14px, 30px);
+  text-transform: uppercase;
+}

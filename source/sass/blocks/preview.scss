@@ -1,0 +1,23 @@
+.preview__bg-img {
+  background-color: $bg-dark;
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+}
+.preview__bg-dark {
+  background-color: $bg-dark;
+}
+.preview__slogan {
+  @include font(24px, 120%);
+  color: $white;
+  font-weight: 300;
+}
+.preview__download__button {
+  @include font(18px, 18px);
+  color: $white;
+  font-weight: 700;
+}
+.preview__annotation {
+  color: $white;
+  font-weight: 300;
+}

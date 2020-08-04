@@ -1,0 +1,13 @@
+.contacts__questions {
+  @include font (24px, 120%);
+  font-weight: 300;
+}
+.contacts__title {
+  @include font (18px, auto);
+  font-weight: 700;
+}
+.contacts__contact {
+  @include font (24px, 120%);
+  color: $pink;
+  font-weight: 300;
+}

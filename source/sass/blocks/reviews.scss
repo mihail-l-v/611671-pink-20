@@ -1,0 +1,11 @@
+.reviews__author {
+  @include font (18px, 30px);
+  font-weight: 700;
+  color: $black;
+}
+.reviews__review {
+  @include font (14px, 30px);
+}
+.reviews__list {
+  @include list-reset;
+}

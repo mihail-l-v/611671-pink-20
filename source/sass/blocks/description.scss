@@ -1,0 +1,13 @@
+.description__content,
+.description__img {
+  background-color: $bg-grey;
+}
+.description__head {
+  @include font (24px, 120%);
+  font-weight: 300;
+}
+.description__title {
+  @include font (18px, 24px);
+  font-weight: 700;
+  color: $black;
+}
