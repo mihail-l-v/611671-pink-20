@@ -1,0 +1,9 @@
+@mixin font ($f-size: 14px, $f-height: 24px) {
+  font-size: $f-size;
+  line-height: $f-height;
+}
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
