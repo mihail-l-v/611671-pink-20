@@ -1,11 +1,41 @@
+.reviews__container {
+  padding: 0 20px;
+}
 .reviews__author {
   @include font (18px, 30px);
   font-weight: 700;
   color: $black;
+  margin: 0;
+  text-align: center;
 }
 .reviews__review {
   @include font (14px, 30px);
+  margin: 0;
 }
 .reviews__list {
   @include list-reset;
+}
+.reviews__toggles {
+  margin: 0;
+  text-align: center;
+}
+.reviews__age-profession {
+  display: none;
+}
+@media (min-width: $tablet-width),(min-width: $desktop-width) {
+  .reviews__age-profession {
+    display: block;
+    @include font (14px, 30px);
+    font-weight: 400;
+    color: $text-color;
+  }
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    padding: 0 130px;
+  }
 }

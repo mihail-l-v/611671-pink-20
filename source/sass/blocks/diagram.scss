@@ -1,0 +1,44 @@
+.diagram {
+  display: none;
+}
+@media (min-width: $tablet-width),(min-width: $desktop-width){
+  .diagram__container {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .diagram{
+    display: block;
+  }  
+  .diagram__title {
+    color: $black;
+    margin: 0;
+  }
+  .diagram_text {
+    margin: 0;
+  }
+  .diagram__link {
+    color: $pink;
+  }
+}
+@media (min-width: $tablet-width) {
+  .diagram__title {
+    @include font (30px, 36px);
+    font-weight: 700;
+  }
+  .diagram_text {
+    @include font (14px, 24px);
+  }
+}
+@media (min-width: $desktop-width) {
+  .diagram__container {
+    padding: 0 120px;
+  }
+  .diagram__title {
+    @include font (30px, 30px);
+    font-weight: 700;
+  }
+  .diagram_text {
+    @include font (18px, 30px);
+  }
+}

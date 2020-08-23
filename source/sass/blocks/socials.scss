@@ -1,3 +1,5 @@
 .social-icons__list {
   @include list-reset;
+  display: flex;
+  justify-content: center;
 }

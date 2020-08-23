@@ -1,9 +1,13 @@
+.price__container {
+  padding: 0 20px;
+}
 .price {
   background-color: $bg-grey;
 }
 .price__title {
   background-color: $bg-price;
   border: 2px solid $bg-price;
+  text-align: center;
 }
 .price__list {
   background-color: $white;
@@ -14,14 +18,31 @@
   color: $white;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
 }
 .price__value {
   @include font (18px, 30px);
   color: $white;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 0;
 }
 .price__consist-item {
   @include font (14px, 30px);
   text-transform: uppercase;
+  margin: 0;
+}
+.price__toggles {
+  margin: 0;
+  text-align: center;
+}
+@media (min-width: $tablet-width),(min-width: $desktop-width){
+  .price__toggles {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width){
+  .price__container {
+    padding: 0 120px;
+  }
 }

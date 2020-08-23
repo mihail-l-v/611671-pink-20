@@ -1,13 +1,45 @@
+.contacts {
+  text-align: center;
+}
+.contacts__container {
+  padding: 0 20px;
+}
 .contacts__questions {
-  @include font (24px, 120%);
+  @include font (24px, 1.2);
   font-weight: 300;
+  margin: 0;
 }
 .contacts__title {
   @include font (18px, auto);
   font-weight: 700;
+  margin: 0;
 }
 .contacts__contact {
-  @include font (24px, 120%);
+  @include font (24px, 1.2);
   color: $pink;
   font-weight: 300;
+  margin: 0;
+}
+@media (min-width: $tablet-width),(min-width: $desktop-width) {
+  .contacts__contain-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $tablet-width) {
+  .contacts__questions {
+    @include font (40px, auto);
+  }
+  .contacts__contain-address {
+    flex-grow: 1;
+  }
+}
+@media (min-width: $desktop-width) {
+  .contacts__questions {
+    @include font (50px, auto);
+  }
+  .contacts__container {
+    padding: 0 120px;
+  }
 }
