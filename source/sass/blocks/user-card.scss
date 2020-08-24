@@ -1,0 +1,24 @@
+.user-card {
+  flex-basis: 300px;
+}
+.user-card__description-photo {
+  background-color: $bg-grey;
+}
+.user-card__author {
+  font-weight: 700;
+}
+.user-card__time-ago {
+  @include font (12px, 24px);
+  font-weight: 300;
+}
+.user-card__heart-amount {
+  @include font (12px, 24px);
+  color: $pink;
+  text-transform: uppercase;
+}
+.user-card__post {
+  margin: 0;
+}
+.user-card--panorama-day {
+  flex-basis: 100%;
+ }

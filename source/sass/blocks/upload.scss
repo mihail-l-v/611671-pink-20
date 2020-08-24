@@ -3,7 +3,19 @@
 }
 .upload__annotation {
   @include font (14px, 30px);
+  margin: 0;
 }
 .upload__correction-list {
   @include list-reset;
+}
+@media (min-width: $tablet-width),(min-width: $desktop-width) {
+  .upload__forms {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 400px;
+  }
+  .upload__foto-area {
+    flex-grow: 1;
+  }
 }

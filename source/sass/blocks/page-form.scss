@@ -1,3 +1,6 @@
+.page-form-container {
+  padding: 0 20px;
+}
 .page-form__preview-box {
   background-color: $bg-dark;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
@@ -5,6 +8,7 @@
   @include font (24px, auto);
   color: $white;
   font-weight: 300;
+  margin: 0;
 }
 .page-form__list,
 .page-form__achievements-list,
@@ -18,6 +22,7 @@
 }
 .page-form__description {
   @include font (14px, 30px);
+  margin: 0;
 }
 .page-form__lable {
   @include font (14px, 18px);
@@ -35,4 +40,7 @@
 }
 .page-form__text-area {
   @include font (18px, 30px);
+}
+.page-form__ps {
+  margin: 0;
 }
